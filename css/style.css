@@ -102,14 +102,13 @@ nav a:focus{
   /* Requirement 5 code here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: auto auto auto auto;
   row-gap: 30px;
   
 }
 
 /* Requirements 6-10 here: */
 .intro{
-  background-color: #B3B3B3;
+  background-color: #707070;
   background-image: url('../images/header.jpg');
   
   min-height: 400px;
@@ -130,7 +129,7 @@ img{
 }
 .about-image, .clients-image, .method-image, .contact-image{
   grid-column: 1/span 3;
-  min-height: 500px;
+  max-height: 500px;
   overflow: hidden;
   
   
@@ -160,26 +159,22 @@ img{
 #about{
   grid-row:1;
   align-items: center;
-  position: relative;
-  z-index: 1; 
+  
 }
 #clients{
   grid-row:2;
   align-items: center;
-  position: relative;
-  z-index: 1; 
+  
 }
 #method{
   grid-row:3;
   align-items: center;
-  position: relative;
-  z-index: 1; 
 }
+  
 #contant{
   grid-row:4;
   align-items: center;
-  position: relative;
-  z-index: 1; 
+  
 }
 .text{
   align-self: center;
@@ -187,7 +182,7 @@ img{
   overflow: scroll;
 }
 
-@media screen and (min-width: 700px){
+@media only screen and (min-width: 700px){
   nav{
     padding-top: 35px;
     /*Requirement 11*/
@@ -209,8 +204,8 @@ img{
   }
   .container{
     display: grid;
-    grid-template-columns: 50px, auto, 500px, auto, 50px;
-    grid-template-rows: 300px, 300px, 300px, 300px;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 300px 300px 300px 300px;
   }
   #about, #clients, .method-image, .contact-image{
     grid-column-start: 3;
