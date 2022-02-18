@@ -141,17 +141,18 @@ img{
   position: relative;
   z-index: -1;
 } 
-.method-image{
+.clients-image{
   grid-row: 2;
   position: relative;
   z-index: -1;
 }
-.contact-image{
+
+.method-image{
   grid-row: 3;
   position: relative;
   z-index: -1;
 }
-.clients-image{
+.contact-image{
   grid-row: 4;
   position: relative;
   z-index: -1;
